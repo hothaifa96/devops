@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: ado-backend
-        image: hothaifaz11/ado-backend:v26-18d09
+        image: hothaifaz11/ado-backend:v27-f230e
         resources:
           limits:
             memory: "128Mi"
