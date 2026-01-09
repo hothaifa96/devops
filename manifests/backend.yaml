@@ -12,6 +12,7 @@ metadata:
   name: backendapp
   namespace: backend
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: backendapp
