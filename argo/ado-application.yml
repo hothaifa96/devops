@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ado-backend
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/hothaifa96/devops
+    targetRevision: HEAD
+    path: ado-manifests/backend
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+     - CreateNameSpace=true
