@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: ado-backend
-        image: grafana/grafana
+        image: hothaifaz11/ado-backend:ganklgaa
         resources:
           limits:
             memory: "128Mi"
